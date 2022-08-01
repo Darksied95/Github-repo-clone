@@ -1,0 +1,8 @@
+.repos_wrapper {
+  max-width: 1050px;
+}
+@media (min-width: 1450px) {
+  .repos_wrapper {
+    margin-left: 10vw;
+  }
+}

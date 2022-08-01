@@ -1,0 +1,94 @@
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1em;
+}
+.new_button,
+.search_repo {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #444c56;
+  border-radius: 6px;
+}
+.new_button {
+  background-color: #347d39;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.new_button svg {
+  fill: #ffffff;
+  margin-right: 0.5em;
+}
+.search_repo {
+  background-color: transparent;
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+}
+.search_repo::placeholder {
+  color: #768390;
+}
+button {
+  padding: 0.5em 1em;
+  display: inline-flex;
+  align-items: flex-end;
+  background-color: #373e47;
+  color: #cdd9e5;
+  border: 1px solid #444c56;
+  border-radius: 6px;
+  margin-right: 0.3em;
+}
+button svg {
+  margin-left: 0.5em;
+}
+@media (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    /* gap: 1em; */
+    grid-template-rows: auto auto;
+  }
+
+  .new_button {
+    max-width: 100px;
+    padding: 0.5em 1em 0.5em 0.4em;
+    grid-column: 2/3;
+    grid-row: span(1);
+    margin-left: 1em;
+  }
+  .search_repo {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 40px;
+  }
+  .button_container {
+    grid-row: 2/3;
+  }
+}
+@media (min-width: 1010px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search_repo {
+    order: -3;
+    margin-right: 1em;
+  }
+  .button_container {
+    order: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .new_button {
+    order: -1;
+    margin-top: 2em;
+  }
+}
+@media (min-width: 1450px) {
+  .container {
+    margin-left: 10vw;
+  }
+}

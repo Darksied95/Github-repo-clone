@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  background-color: #2d333b !important;
+  color: #cdd9e5;
+  padding: 10px 0;
+  padding-left: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+.header * {
+  margin-left: 0.5em;
+}
+.hamburger {
+  width: 25px;
+  height: 25px;
+}
+.github-icon {
+  height: 32px;
+  width: 32px;
+}
+.search {
+  background-color: #22272e;
+  background-image: url("../../asset/a.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 28px;
+  border: 1px solid #444c56;
+  border-radius: 6px;
+  padding: 15px 12px;
+  width: 280px;
+  margin-left: 20px;
+  transition: width 100ms;
+  display: none;
+}
+.search::placeholder {
+  color: #c8c9cb;
+  font-size: 0.875rem;
+}
+.search {
+  cursor: text;
+}
+.search:focus {
+  width: 600px;
+  outline: 0;
+  opacity: 0.5;
+  background-image: unset;
+}
+.links {
+  display: none;
+  list-style-type: none;
+}
+.links li {
+  margin-left: 1em;
+}
+.showBigScreen {
+  display: none;
+}
+.showSmallScreen {
+  display: inline-block;
+}
+
+.aside {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #cdd9e5;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+.aside div {
+  margin: 0;
+  margin-left: 1em;
+}
+.bell {
+  width: 20px;
+  height: 20px;
+}
+.plus {
+  width: 15px;
+  height: 15px;
+  stroke-width: 30px;
+}
+.down {
+  margin-left: 0.3em;
+  height: 15px;
+  width: 15px;
+}
+
+.imageBox,
+.plusBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageBox *,
+.plusBox * {
+  margin-right: 0;
+  margin-left: 0.3em;
+  display: none;
+}
+.image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    justify-content: center;
+  }
+  .hamburger {
+    display: none;
+  }
+  .search {
+    display: block;
+    /* margin: 0; */
+  }
+  .links {
+    display: flex;
+  }
+  .imageBox *,
+  .plusBox * {
+    display: inline;
+  }
+  .aside {
+    margin-left: auto;
+  }
+}
+@media (min-width: 1010px) {
+  .showSmallScreen {
+    display: none;
+  }
+  .showBigScreen {
+    display: block;
+  }
+}

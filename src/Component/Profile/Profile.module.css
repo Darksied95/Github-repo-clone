@@ -1,0 +1,192 @@
+.container {
+  color: #adbac7 !important ;
+  padding-left: 1em;
+  width: 95vw;
+}
+.house {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+.image_container {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  width: 16%;
+  height: 5%;
+  position: relative;
+}
+h1 {
+  display: inline-block;
+  margin-left: 1em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #adbac7;
+}
+h1 span {
+  color: #768390;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  font-style: normal;
+}
+
+.profile_picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(205, 217, 229, 0.1);
+}
+.image_button {
+  display: none;
+}
+.image_button svg {
+  width: 16px;
+  height: 16px;
+  color: #768390;
+}
+.bio {
+  color: #adbac7;
+  line-height: 1.5;
+}
+.searchbar,
+.button {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+  border: 1px solid #444c56;
+  font-size: 0.875rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.43em;
+  border-radius: 6px;
+}
+.searchbar {
+  background-color: transparent;
+  padding-left: 40px;
+  background-image: url("../../asset/happy.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+  margin: 2em 0px 1em;
+}
+.searchbar::placeholder {
+  font-size: 0.75rem;
+  line-height: 1.667em;
+  font-weight: 300;
+  color: #768390;
+}
+.button {
+  background-color: #373e47;
+  color: #adbac7;
+  margin: 1.8em 0px 1em;
+}
+.follows {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+.follows svg {
+  fill: #768390;
+}
+.follows p {
+  margin-left: 0.5em;
+  color: #768390;
+}
+.follows p span {
+  color: #cdd9e5;
+}
+.dot {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-top: -10px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.locations {
+  display: none;
+}
+@media (min-width: 769px) {
+  .container {
+    padding-left: 2em;
+    width: 300px;
+  }
+  .house {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .image_container {
+    width: 260px;
+    height: 260px;
+    margin-top: -3em;
+  }
+  .image_button {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    background-color: #22272e;
+    width: 31px;
+    padding: 0.7em 0.5em;
+    align-items: center;
+    color: #768390;
+    border: 0.2px solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    white-space: nowrap;
+  }
+
+  .image_button svg,
+  .image_button p {
+    margin: 0;
+    fill: #768390;
+    margin-right: 5px;
+  }
+  .image_button p {
+    white-space: nowrap;
+    display: inline-block;
+    height: 100%;
+  }
+  h1 {
+    margin: 1em 0px;
+  }
+  .searchbar {
+    display: none;
+  }
+  .locations {
+    display: block;
+    margin-top: 1.5em;
+    border-bottom: 1px solid;
+  }
+  .locations div {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.5em;
+  }
+  .locations div:last-child {
+    margin-bottom: 1.5em;
+  }
+  .locations div svg {
+    width: 15px;
+    height: 15px;
+  }
+  .locations div p {
+    margin-left: 1em;
+  }
+}
+@media (min-width: 1011px) {
+  .profile_picture {
+    width: 296px;
+    height: 296px;
+  }
+}
+@media (min-width: 1450px) {
+  .container {
+    margin-left: 10vw;
+  }
+}
