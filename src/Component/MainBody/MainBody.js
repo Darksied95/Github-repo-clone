@@ -13,6 +13,8 @@ const MainBody = () => {
   async function getReposAndProfileDetails() {
     const { data: profile } = await axios.get("https://api.github.com/users/darksied95")
     const { data: repos } = await axios.get("https://api.github.com/users/darksied95/repos")
+    console.table(profile);
+    console.table(repos)
     const updatedReposWithCorrectLanguage = repos.map(async (repo) => {
       const { data } = await axios.get(repo.languages_url)
       return { ...repo, language: Object.keys(data)[0] }
@@ -40,6 +42,7 @@ const MainBody = () => {
       <div className={styles.repo}>
         <Repositories repos={repos} />
       </div>
+
     </div>
   );
 };

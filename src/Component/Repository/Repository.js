@@ -5,8 +5,8 @@ import styles from "./Repository.module.css";
 const Repository = ({ repo }) => {
   let current_Date = new Date().getTime()
   let lastUpdatedTime = new Date(repo.updated_at).getTime()
-  console.log(current_Date);
-  console.log(Date(current_Date - lastUpdatedTime));
+  // console.log(current_Date);
+  // console.log(Date(current_Date - lastUpdatedTime));
   // console.log(repo.updated_at);
   return (
     <section className={styles.repo_container}>
