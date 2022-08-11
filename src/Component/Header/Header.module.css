@@ -29,7 +29,7 @@
   padding: 15px 12px;
   width: 280px;
   margin-left: 20px;
-  transition: width 100ms;
+  transition: width 500ms;
   display: none;
 }
 .search::placeholder {
@@ -48,6 +48,8 @@
 .links {
   display: none;
   list-style-type: none;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 .links li {
   margin-left: 1em;
@@ -74,7 +76,7 @@ a:hover {
 }
 .aside div {
   margin: 0;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 .bell {
   width: 20px;
@@ -86,9 +88,8 @@ a:hover {
   stroke-width: 30px;
 }
 .down {
-  margin-left: 0.3em;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
 }
 
 .imageBox,
@@ -100,12 +101,12 @@ a:hover {
 .imageBox *,
 .plusBox * {
   margin-right: 0;
-  margin-left: 0.3em;
+  margin-left: 0.15em;
   display: none;
 }
 .image {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 @media (min-width: 768px) {
@@ -118,7 +119,6 @@ a:hover {
   }
   .search {
     display: block;
-    /* margin: 0; */
   }
   .links {
     display: flex;
