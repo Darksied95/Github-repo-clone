@@ -17,14 +17,22 @@
   margin-bottom: 0.5em;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 2.143em;
+  padding: 0.5em 0px;
 }
+.nav_links_container li a {
+  display: flex;
+  align-items: flex-end;
+}
+.nav_links_container li a p {
+  align-self: flex-end;
+}
+
 .nav_links_container li span {
   display: inline-grid;
   place-content: center;
   margin-left: 0.5em;
   vertical-align: middle;
-  padding: 0.2em 0.4em 0.4em 0.3em;
+  padding: 0.05em 0.5em 0.05em 0.5em;
   border-radius: 50%;
   background-color: #373e47;
 }
